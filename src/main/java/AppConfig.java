@@ -14,7 +14,7 @@ public class AppConfig {
     }
 
     //Устанавливаем аннатацию @Scope указываем что prototype,
-    //обычно singlton установлен по умолчанию
+    //обычно singleton установлен по умолчанию
     @Bean(name = "catworld")
     @Scope("prototype")
     public Cat getCat() {
